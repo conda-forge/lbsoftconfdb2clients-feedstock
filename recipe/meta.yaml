@@ -1,5 +1,5 @@
 {% set name = "lbsoftconfdb2clients" %}
-{% set version = "1.1.8" %}
+{% set version = "2.0.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/LbSoftConfDb2Clients-{{ version }}.tar.gz
-  sha256: 336c63109a5163dfec54abafd3e255baadcf1a51f81f3192e2dfe008d0748f63
+  sha256: 686da30c9b10d0af1f953925a6c9028e748f8f959b5d70eb80f41a1edf5bbb07
 
 build:
   number: 0

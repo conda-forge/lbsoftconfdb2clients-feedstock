@@ -5,11 +5,9 @@ Home: https://gitlab.cern.ch/lhcb-core/LbSoftConfDb2Clients
 
 Package license: GPL-3.0-or-later
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/lbsoftconfdb2clients-feedstock/blob/master/LICENSE.txt)
 
 Summary: LHCb Software configuration database 2 clients
-
-
 
 Current build status
 ====================

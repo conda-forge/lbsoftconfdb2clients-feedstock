@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/LbSoftConfDb2Clients-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/LbSoftConfDb2Clients-{{ version }}.tar.gz
   sha256: 686da30c9b10d0af1f953925a6c9028e748f8f959b5d70eb80f41a1edf5bbb07
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - lb-sdb-query=LbSoftConfDb2Clients.LbSdbQuery:main
@@ -31,12 +31,12 @@ requirements:
   host:
     - nose >=1.0
     - pip
-    - python
+    - python {{ python_min }}
     - setuptools_scm
   run:
     - lbcommon
     - lbenv
-    - python
+    - python >={{ python_min }}
     - six
 
 test:
@@ -57,6 +57,7 @@ test:
     - lb-sdb-add-project --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://gitlab.cern.ch/lhcb-core/LbSoftConfDb2Clients
